@@ -1,0 +1,72 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>Form1</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>Form1</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>448</width>
+            <height>128</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>NRG2ISO converter</string>
+    </property>
+    <property name="modal">
+        <bool>false</bool>
+    </property>
+    <widget class="QPushButton">
+        <property name="name">
+            <cstring>pbtnOpen</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>290</x>
+                <y>90</y>
+                <width>140</width>
+                <height>30</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>&amp;open and convert</string>
+        </property>
+    </widget>
+    <widget class="QLabel">
+        <property name="name">
+            <cstring>textLabel1</cstring>
+        </property>
+        <property name="geometry">
+            <rect>
+                <x>20</x>
+                <y>10</y>
+                <width>410</width>
+                <height>75</height>
+            </rect>
+        </property>
+        <property name="text">
+            <string>&lt;h1 align="center"&gt;NRG2ISO converter&lt;/h1&gt;
+&lt;p align="center"&gt;&lt;font size="-1"&gt;&amp;copy;2004 Jonas Bj&amp;ouml;rk, jonas@trinix.se&lt;/font&gt;&lt;br&gt;
+&lt;font size="-2"&gt;This code is licensed under GPL v2, with sole exception that license does not hold.&lt;/font&gt;&lt;/p&gt;</string>
+        </property>
+    </widget>
+</widget>
+<connections>
+    <connection>
+        <sender>pbtnOpen</sender>
+        <signal>clicked()</signal>
+        <receiver>Form1</receiver>
+        <slot>openConvert()</slot>
+    </connection>
+</connections>
+<includes>
+    <include location="local" impldecl="in implementation">form1.ui.h</include>
+</includes>
+<slots>
+    <slot returnType="int">openConvert()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
